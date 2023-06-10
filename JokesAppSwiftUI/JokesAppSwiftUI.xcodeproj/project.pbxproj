@@ -17,6 +17,7 @@
 		F1A71C4C2A30EEEE00CD7537 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71C4B2A30EEEE00CD7537 /* Request.swift */; };
 		F1A71C4E2A30F9DF00CD7537 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71C4D2A30F9DF00CD7537 /* AppConstants.swift */; };
 		F1A71C8A2A339B4400CD7537 /* JokeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71C892A339B4400CD7537 /* JokeTextView.swift */; };
+		F1A71C8E2A34980C00CD7537 /* CustomRoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71C8D2A34980C00CD7537 /* CustomRoundCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F1A71C4B2A30EEEE00CD7537 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		F1A71C4D2A30F9DF00CD7537 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		F1A71C892A339B4400CD7537 /* JokeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTextView.swift; sourceTree = "<group>"; };
+		F1A71C8D2A34980C00CD7537 /* CustomRoundCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRoundCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		F1A71C4A2A30DE3B00CD7537 /* Utills */ = {
 			isa = PBXGroup;
 			children = (
+				F1A71C8D2A34980C00CD7537 /* CustomRoundCorner.swift */,
 				F1A71C4D2A30F9DF00CD7537 /* AppConstants.swift */,
 			);
 			path = Utills;
@@ -199,6 +202,7 @@
 				F1A71C4C2A30EEEE00CD7537 /* Request.swift in Sources */,
 				F1A71C452A2F9EAF00CD7537 /* ApiService.swift in Sources */,
 				F1A71C492A30CE6900CD7537 /* EndPoints.swift in Sources */,
+				F1A71C8E2A34980C00CD7537 /* CustomRoundCorner.swift in Sources */,
 				F1A71C472A30CD6400CD7537 /* ServiceProtocol.swift in Sources */,
 				F1A71C8A2A339B4400CD7537 /* JokeTextView.swift in Sources */,
 				F1A71C412A2F9DAE00CD7537 /* JokeViewModel.swift in Sources */,

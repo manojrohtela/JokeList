@@ -10,32 +10,35 @@ import SwiftUI
 struct JokeTextView: View {
     @StateObject private var viewModel = JokeViewModel()
     var body: some View {
-        Spacer()
-        List{
-            ForEach(0..<viewModel.jokes.count, id: \.self) { index in
-                Text(viewModel.jokes[index])
-                    .foregroundColor(.white)
-                    .listRowBackground(
-                        RoundedRectangle(cornerRadius: 10)
-                            .background(.clear)
-                            .foregroundColor(.blue)
-                            .padding(
-                                EdgeInsets(
-                                    top: 2,
-                                    leading: 10,
-                                    bottom: 2,
-                                    trailing: 10
-                                )
-                            )
-                    )
+        NavigationView {
+            List{
+                ForEach(0..<viewModel.jokes.count, id: \.self) { index in
+                    HStack{
+                        Text(viewModel.jokes[index])
+                            .font(.custom(
+                                    "Poppins",
+                                    fixedSize: 15))
+                            .foregroundColor(.white)
+                            
+                    }
+                    .background(Color.clear)
+                    .padding(20)
                     .listRowSeparator(.hidden)
-                .shadow(radius: 5)
-                .animation(.easeIn, value: 10)
+                    .listRowBackground(Color.gray.opacity(0.1))
+                    
+                        
+                }
+                .background(Color.cyan)
+                .cornerRadius(10, corners: [.topLeft,.bottomRight])
+                .animation(Animation.spring(),value:20)
+    //            .padding(5)
             }
-            .background(.clear)
+            .navigationTitle("Jokes")
+            .navigationBarTitleDisplayMode(.automatic)
         }
         
     }
+    
 }
 
 struct JokeTextView_Previews: PreviewProvider {
