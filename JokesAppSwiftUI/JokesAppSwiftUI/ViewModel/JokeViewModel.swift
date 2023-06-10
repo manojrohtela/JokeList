@@ -55,11 +55,14 @@ class JokeViewModel:ObservableObject {
     private func loadData() {
         self.loading = true
         service.fetchJoke(urlStr: Endpoints.getJoke) {[weak self] joke in
+            DispatchQueue.main.async {
                 self?.loading = false
                 guard let joke = joke else {
                     return
                 }
                 self?.addJoke(joke)
+            }
+              
         }
     }
     
