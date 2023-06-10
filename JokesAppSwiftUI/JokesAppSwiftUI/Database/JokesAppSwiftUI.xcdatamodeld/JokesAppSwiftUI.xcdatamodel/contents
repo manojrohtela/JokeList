@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F5027f" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="JokeText" representedClassName="JokeText" syncable="YES">
-        <attribute name="jokeStr" optional="YES" attributeType="Transformable" customClassName="[String]"/>
-    </entity>
-</model>

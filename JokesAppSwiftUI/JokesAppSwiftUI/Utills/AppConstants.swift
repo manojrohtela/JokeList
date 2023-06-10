@@ -7,6 +7,6 @@
 
 import Foundation
 struct AppConstants{
-    static let timeIntervalForJoke = 5
+    static let timeIntervalForJoke = 60
     static let jokeDataBaseKey = "jokeList"
 }
